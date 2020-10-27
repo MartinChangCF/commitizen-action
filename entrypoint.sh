@@ -13,6 +13,6 @@ else
 fi
 
 echo "Running cz check $INPUT_BRANCH"
-cz check --rev-range $INPUT_BRANCH
+cz check --rev-range origin/$INPUT_BRANCH..HEAD
 
 echo "Done."
