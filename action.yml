@@ -7,7 +7,7 @@ branding:
   icon: 'git-commit'
   color: 'purple'
 inputs:
-  branch:
-    description: 'Destination branch to push changes'
-    required: false
-    default: 'master'
+  range:
+    description: 'Commit Ranges for checking, default to recent 5 commits'
+    required: true
+    default: 'HEAD~5..'

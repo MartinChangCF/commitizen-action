@@ -12,7 +12,7 @@ else
     pip install commitizen
 fi
 
-echo "Running cz check $INPUT_BRANCH"
-cz check --rev-range origin/$INPUT_BRANCH..HEAD
+echo "Running cz check $INPUT_RANGE"
+cz check --rev-range $INPUT_RANGE
 
 echo "Done."
