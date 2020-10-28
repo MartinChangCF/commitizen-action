@@ -8,6 +8,5 @@ branding:
   color: 'purple'
 inputs:
   range:
-    description: 'Commit Ranges for checking, default to recent 5 commits'
-    required: true
-    default: 'HEAD~5..'
+    description: 'Commit Ranges for checking'
+    required: false

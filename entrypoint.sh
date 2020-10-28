@@ -1,6 +1,12 @@
 #!/bin/bash
 
-INPUT_BRANCH=${INPUT_BRANCH:-master}
+firstcommit=`git rev-list --max-parents=0 HEAD`
+
+if [ -z "${INPUT_RANGE}" ]; then 
+    INPUT_RANGE=${firstcommit}..HEAD
+else 
+    INPUT_RANGE=${INPUT_RANGE}
+fi
 
 set -e
 
